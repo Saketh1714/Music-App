@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
+        app:srcCompat="@drawable/img"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,13 +32,14 @@
         android:requiresFadingEdge="horizontal"
         android:scrollHorizontally="true"
         android:singleLine="true"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextSizeCheck" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -61,7 +63,8 @@
         app:layout_constraintEnd_toStartOf="@+id/next"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toEndOf="@+id/previous"
-        app:srcCompat="@drawable/img_4" />
+        app:srcCompat="@drawable/img_4"
+        android:contentDescription="@string/todo3" />
 
     <ImageView
         android:id="@+id/next"
@@ -72,7 +75,8 @@
         android:layout_marginBottom="212dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/next" />
+        app:srcCompat="@drawable/next"
+        android:contentDescription="@string/todo2" />
 
     <ImageView
         android:id="@+id/previous"
@@ -85,6 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/next"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/previous" />
+        app:srcCompat="@drawable/previous"
+        android:contentDescription="@string/todo4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
